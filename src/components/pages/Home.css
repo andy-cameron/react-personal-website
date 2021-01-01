@@ -1,0 +1,46 @@
+.home-container {
+	background: #242d42;
+	height: 100%;
+	width: 100vw;
+	position: absolute;
+	padding: 1rem;
+	font-weight: bold;
+}
+
+.hi-there {
+	font-size: 49px;
+	color: #898989;
+	font-weight: bold;
+}
+
+.resume-button {
+	padding: 20px 20px;
+	color: #242d42;
+	cursor: pointer;
+	position: relative;
+	background: #c34b41;
+	text-align: center;
+	justify-content: flex-end;
+	border-radius: 10px;
+	font-size: 30px;
+}
+
+.resume-button:hover {
+	color: #ededed;
+	transition: 0.7s;
+}
+
+.typewriter-container {
+	height: 300px;
+}
+
+.resume-container {
+	padding-top: 40px;
+	background: 'white';
+}
+
+@media screen and (max-width: 600px) {
+	.hi-there {
+		font-size: 25px;
+	}
+}
