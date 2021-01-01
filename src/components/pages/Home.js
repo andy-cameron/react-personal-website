@@ -5,47 +5,47 @@ import Typewriter from '../typewriter/Typewriter';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Container from '@material-ui/core/Container';
+import SideBar from '../SideBar';
 
 const Home = () => {
-	const useStyles = makeStyles(theme => ({
-		paper: {
-			textAlign: 'center'
-		}
-	}));
-
-	const classes = useStyles();
-
 	return (
-		<div className='home-container'>
+		<Grid className='home-container'>
 			<Grid container spacing={3}>
-				<Grid item xs={2}>
-					<Paper className={classes.paper}>1</Paper>
-				</Grid>
+				<Grid item xs={2}></Grid>
 				<Grid item xs={8}>
-					<div className='hi-there'>Hi there</div>
-					<div className='typewriter-container'>
-						<Typewriter
-							className='typewriter'
-							texts={[
-								'Andy',
-								'living in Belfast',
-								'a developer',
-								'looking for work',
-								'experienced in React',
-								'experienced in Android',
-								'experienced in Java'
-							]}
-						/>
-					</div>
-					<div className='resume-container'>
-						<a className='resume-button'> Resume</a>
-					</div>
+					<Grid
+						container
+						direction='column'
+						justify='space-between'
+						alignItems='flex-start'
+					>
+						<div>
+							<div className='typewriter-container'>
+								<div className='hi-there'>Hi there</div>
+								<Typewriter
+									className='typewriter'
+									texts={[
+										'Andy',
+										'living in Belfast',
+										'a developer',
+										'looking for work',
+										'experienced in React',
+										'experienced in Android',
+										'experienced in Java'
+									]}
+								/>
+							</div>
+
+							<div className='resume-container'>
+								<a className='resume-button'>Resume</a>
+							</div>
+						</div>
+					</Grid>
 				</Grid>
-				<Grid item xs={2}>
-					<Paper className={classes.paper}>3</Paper>
-				</Grid>
+
+				<SideBar></SideBar>
 			</Grid>
-		</div>
+		</Grid>
 	);
 };
 

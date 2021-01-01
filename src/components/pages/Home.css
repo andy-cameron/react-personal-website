@@ -7,10 +7,6 @@
 	font-weight: bold;
 }
 
-.typewriter-container {
-	margin-bottom: 50px;
-}
-
 .hi-there {
 	font-size: 49px;
 	color: #898989;
@@ -29,8 +25,17 @@
 	font-size: 30px;
 }
 
+.resume-button:hover {
+	color: #ededed;
+	transition: 0.7s;
+}
+
+.typewriter-container {
+	height: 300px;
+}
+
 .resume-container {
-	flex: 1;
+	padding-top: 40px;
 	background: 'white';
 }
 

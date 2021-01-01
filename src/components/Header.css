@@ -25,11 +25,15 @@
 }
 
 .header-button-contact:hover {
-	color: #ddd;
+	color: #ededed;
 	transition: 0.7s;
 }
 
 .header-button:hover {
-	color: #ddd;
+	color: #ededed;
 	transition: 0.7s;
+}
+
+.header-button:active {
+	color: #ededed;
 }
