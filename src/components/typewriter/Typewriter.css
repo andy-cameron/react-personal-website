@@ -1,0 +1,14 @@
+.typewriter {
+	font-size: 86px;
+	color: #c34b41;
+}
+
+.im-text {
+	color: #ededed;
+}
+
+@media screen and (max-width: 600px) {
+	.typewriter {
+		font-size: 45px;
+	}
+}
