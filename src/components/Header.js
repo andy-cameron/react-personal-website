@@ -122,28 +122,36 @@ const Header = props => {
 					) : (
 						<div className={classes.headerOptions}>
 							<a
-								className='header-button'
+								className={`header-button${
+									window.location.pathname === '/' ? '-active' : ''
+								}`}
 								variant='contained'
 								onClick={() => handleButtonClick('/')}
 							>
 								<h1>HOME</h1>
 							</a>
 							<a
-								className='header-button'
+								className={`header-button${
+									window.location.pathname === '/about' ? '-active' : ''
+								}`}
 								variant='contained'
 								onClick={() => handleButtonClick('/about')}
 							>
 								<h1>ABOUT</h1>
 							</a>
 							<a
-								className='header-button'
+								className={`header-button${
+									window.location.pathname === '/projects' ? '-active' : ''
+								}`}
 								variant='contained'
 								onClick={() => handleButtonClick('/projects')}
 							>
 								<h1>PROJECTS</h1>
 							</a>
 							<a
-								className='header-button-contact'
+								className={`header-button-contact${
+									window.location.pathname === '/contact' ? '-active' : ''
+								}`}
 								variant='contained'
 								onClick={() => handleButtonClick('/contact')}
 							>

@@ -1,9 +1,8 @@
 .home-container {
 	background: #242d42;
 	height: 100%;
-	width: 100vw;
+	width: 100%;
 	position: absolute;
-	padding: 1rem;
 	font-weight: bold;
 }
 
