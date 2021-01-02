@@ -1,0 +1,8 @@
+.about-container {
+	background: #242d42;
+	height: 100%;
+	width: 100vw;
+	position: absolute;
+	padding: 1rem;
+	font-weight: bold;
+}
