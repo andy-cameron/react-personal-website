@@ -7,11 +7,10 @@ import { DiJava, DiJsBadge, DiReact, DiAndroid, DiGit } from 'react-icons/di';
 
 const About = () => {
 	return (
-		<div className='about-container'>
+		<div className='div-container'>
 			<Grid>
-				<Grid container>
-					<Grid className='div-container' item xs={2}></Grid>
-					<Grid item xs={8}>
+				<Grid container className='about-container'>
+					<Grid className='item-1' item xs={10}>
 						<div className='about-text-container'>
 							<h1>About Me</h1>
 							<div className='p-container'>
@@ -40,7 +39,7 @@ const About = () => {
 						<Grid
 							container
 							direction='row'
-							justify='space-evenly'
+							justify='space-around'
 							alignItems='center'
 							className='tech-stack'
 						>
@@ -51,11 +50,21 @@ const About = () => {
 							<DiGit />
 						</Grid>
 					</Grid>
-					<Grid item xs={2} direction='column' justify='center' alignItems='center'>
+					<Grid
+						className='about-sidebar'
+						item
+						xs={2}
+						direction='column'
+						justify='center'
+						alignItems='center'
+					>
 						<SideBar />
 					</Grid>
 				</Grid>
 			</Grid>
+			<div className='image-container'>
+				<div className='triangle-bottomleft'></div>
+			</div>
 		</div>
 	);
 };
