@@ -47,6 +47,9 @@ const Home = () => {
 						<SideBar />
 					</Grid>
 				</Grid>
+				<div className='image-container'>
+					<div className='triangle-bottomleft'></div>
+				</div>
 			</Grid>
 		</>
 	);

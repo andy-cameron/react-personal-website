@@ -1,9 +1,12 @@
+import './Contact.css';
 import React from 'react';
 
 const Contact = () => {
 	return (
-		<div>
-			<h1>Contact</h1>
+		<div className='page-container'>
+			<div className='image-container'>
+				<div className='triangle-bottomleft'></div>
+			</div>
 		</div>
 	);
 };

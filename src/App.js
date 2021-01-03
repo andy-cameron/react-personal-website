@@ -13,14 +13,16 @@ const useStyles = makeStyles({});
 export default function App() {
 	const classes = useStyles();
 	return (
-		<div className={classes.container}>
-			<Header />
-			<Switch>
-				<Route exact from='/' render={props => <Home {...props} />} />
-				<Route exact path='/contact' render={props => <Contact {...props} />} />
-				<Route exact path='/about' render={props => <About {...props} />} />
-				<Route exact path='/projects' render={props => <Projects {...props} />} />
-			</Switch>
+		<div>
+			<div>
+				<Header style={{ height: '90vh' }} />
+				<Switch>
+					<Route exact from='/' render={props => <Home {...props} />} />
+					<Route exact path='/contact' render={props => <Contact {...props} />} />
+					<Route exact path='/about' render={props => <About {...props} />} />
+					<Route exact path='/projects' render={props => <Projects {...props} />} />
+				</Switch>
+			</div>
 		</div>
 	);
 }
