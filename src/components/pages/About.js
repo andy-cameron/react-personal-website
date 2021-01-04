@@ -62,9 +62,6 @@ const About = () => {
 					</Grid>
 				</Grid>
 			</Grid>
-			<div className='image-container'>
-				<div className='triangle-bottomleft'></div>
-			</div>
 		</div>
 	);
 };
