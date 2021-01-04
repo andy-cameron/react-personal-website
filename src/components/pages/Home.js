@@ -27,12 +27,12 @@ const Home = () => {
 										className='typewriter'
 										texts={[
 											'Andy',
-											'living in Belfast',
+											'living in Northern Ireland',
 											'a developer',
 											'looking for work',
 											'experienced in React',
 											'experienced in Android',
-											'experienced in Java'
+											'experienced in Java',
 										]}
 									/>
 								</div>
