@@ -1,7 +1,7 @@
 import './Typewriter.css';
 import React, { useState, useEffect } from 'react';
 
-const Typewriter = ({ texts }) => {
+const Typewriter = ({ texts, startingText }) => {
 	const [isDeleting, setIsDeleting] = useState(true);
 	const [text, setText] = useState(texts[0]);
 	const [delta, setDelta] = useState(0);
@@ -10,7 +10,7 @@ const Typewriter = ({ texts }) => {
 	const [start, setStart] = useState(false);
 	const timeBeforeStarting = 2500;
 	const deletingSpeed = 90;
-	const timeBeforeDeleting = 800;
+	const timeBeforeDeleting = 1000;
 	const timeBeforeWriting = 180;
 
 	function tick() {
@@ -45,9 +45,9 @@ const Typewriter = ({ texts }) => {
 
 	return (
 		<span className='typewriter'>
-			<span className='im-text'>I'm </span>
+			<span className='im-text'>{startingText}</span>
 			{text}
-			<span>|</span>
+			<span className='cursor blink'>|</span>
 		</span>
 	);
 };

@@ -34,6 +34,7 @@ const Home = () => {
 											'experienced in Android',
 											'experienced in Java',
 										]}
+										startingText={`I'm `}
 									/>
 								</div>
 

@@ -12,34 +12,34 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { withRouter } from 'react-router-dom';
 import './Header.css';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
 	root: {
 		flexGrow: 1,
 		boxShadow: 'none',
-		backgroundColor: '#242d42'
+		backgroundColor: '#242d42',
 	},
 	menuButton: {
-		marginRight: theme.spacing(2)
+		marginRight: theme.spacing(2),
 	},
 	headerButton: {
 		flex: 1,
 		justifyContent: 'flex-end',
-		backgroundColor: '#242d42'
+		backgroundColor: '#242d42',
 	},
 	title: {
 		[theme.breakpoints.down('xs')]: {
-			flexGrow: 1
-		}
+			flexGrow: 1,
+		},
 	},
 	headerOptions: {
 		display: 'flex',
 		flex: 1,
 		justifyContent: 'flex-end',
-		background: '#242d42'
-	}
+		background: '#242d42',
+	},
 }));
 
-const Header = props => {
+const Header = (props) => {
 	const { history } = props;
 	const classes = useStyles();
 	const [anchorEl, setAnchorEl] = React.useState(null);
@@ -47,36 +47,36 @@ const Header = props => {
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down('xs'));
 
-	const handleMenu = event => {
+	const handleMenu = (event) => {
 		setAnchorEl(event.currentTarget);
 	};
 
-	const handleMenuClick = pageURL => {
+	const handleMenuClick = (pageURL) => {
 		history.push(pageURL);
 		setAnchorEl(null);
 	};
 
-	const handleButtonClick = pageURL => {
+	const handleButtonClick = (pageURL) => {
 		history.push(pageURL);
 	};
 
 	const menuItems = [
 		{
 			menuTitle: 'Home',
-			pageURL: '/'
+			pageURL: '/',
 		},
 		{
 			menuTitle: 'About',
-			pageURL: '/about'
+			pageURL: '/about',
 		},
 		{
 			menuTitle: 'Projects',
-			pageURL: '/projects'
+			pageURL: '/projects',
 		},
 		{
 			menuTitle: 'Contact',
-			pageURL: '/contact'
-		}
+			pageURL: '/contact',
+		},
 	];
 
 	return (
@@ -99,17 +99,17 @@ const Header = props => {
 								anchorEl={anchorEl}
 								anchorOrigin={{
 									vertical: 'top',
-									horizontal: 'right'
+									horizontal: 'right',
 								}}
 								keepMounted
 								transformOrigin={{
 									vertical: 'top',
-									horizontal: 'right'
+									horizontal: 'right',
 								}}
 								open={open}
 								onClose={() => setAnchorEl(null)}
 							>
-								{menuItems.map(menuItem => {
+								{menuItems.map((menuItem) => {
 									const { menuTitle, pageURL } = menuItem;
 									return (
 										<MenuItem onClick={() => handleMenuClick(pageURL)}>
