@@ -10,7 +10,7 @@ const Typewriter = ({ texts }) => {
 	const [start, setStart] = useState(false);
 	const timeBeforeStarting = 2500;
 	const deletingSpeed = 90;
-	const timeBeforeDeleting = 800;
+	const timeBeforeDeleting = 1000;
 	const timeBeforeWriting = 180;
 
 	function tick() {
@@ -47,7 +47,7 @@ const Typewriter = ({ texts }) => {
 		<span className='typewriter'>
 			<span className='im-text'>I'm </span>
 			{text}
-			<span>|</span>
+			<span className='cursor blink'>|</span>
 		</span>
 	);
 };
