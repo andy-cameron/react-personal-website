@@ -1,7 +1,7 @@
 import './Typewriter.css';
 import React, { useState, useEffect } from 'react';
 
-const Typewriter = ({ texts }) => {
+const Typewriter = ({ texts, startingText }) => {
 	const [isDeleting, setIsDeleting] = useState(true);
 	const [text, setText] = useState(texts[0]);
 	const [delta, setDelta] = useState(0);
@@ -45,7 +45,7 @@ const Typewriter = ({ texts }) => {
 
 	return (
 		<span className='typewriter'>
-			<span className='im-text'>I'm </span>
+			<span className='im-text'>{startingText}</span>
 			{text}
 			<span className='cursor blink'>|</span>
 		</span>
