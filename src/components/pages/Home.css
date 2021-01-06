@@ -45,6 +45,10 @@
 	border-right: 300px solid transparent;
 }
 
+.typewriter {
+	font-size: 150px;
+}
+
 @media screen and (max-width: 800px) {
 	.hi-there {
 		margin-top: 80px;

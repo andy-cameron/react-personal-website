@@ -3,4 +3,37 @@
 	color: #c34b41;
 	font-size: 30px;
 	font-weight: 900;
+	height: auto;
+}
+
+.crane-icon {
+	fill: #c34b41;
+	height: 250px;
+}
+
+.typewriter-projects {
+	margin-top: 30px;
+	width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+	.crane-icon {
+		height: 200px;
+		margin-top: 90px;
+	}
+
+	.typewriter-projects {
+		font-size: large;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.crane-icon {
+		height: 150px;
+		margin-top: 90px;
+	}
+
+	.typewriter-projects {
+		font-size: large;
+	}
 }

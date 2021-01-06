@@ -10,7 +10,13 @@ const SideBar = () => {
 	const classes = useStyles();
 	return (
 		<div className='sidebar-container'>
-			<Grid container direction='column-reverse' justify='center' alignItems='center' xs={2}>
+			<Grid
+				container
+				direction='column-reverse'
+				justify='space-evenly'
+				alignItems='center'
+				xs={2}
+			>
 				<a href='https://github.com/andy-cameron' target='_blank' className='sidebar-icon'>
 					<GitHubIcon className={classes.icon} />
 				</a>
@@ -32,8 +38,8 @@ const SideBar = () => {
 const useStyles = makeStyles({
 	icon: {
 		fontSize: 40,
-		color: '#ededed'
-	}
+		color: '#ededed',
+	},
 });
 
 export default SideBar;
