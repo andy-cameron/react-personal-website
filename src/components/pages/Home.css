@@ -45,9 +45,33 @@
 	border-right: 300px solid transparent;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 	.hi-there {
 		margin-top: 80px;
 		font-size: 25px;
+	}
+
+	.typewriter-container {
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.resume-button {
+		padding: 10px 10px;
+		color: #242d42;
+		cursor: pointer;
+		position: relative;
+		background: #c34b41;
+		text-align: center;
+		justify-content: flex-end;
+		border-radius: 10px;
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.typewriter-container {
+		height: 420px;
 	}
 }
