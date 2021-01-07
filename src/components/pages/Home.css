@@ -1,0 +1,81 @@
+.home-container {
+	background: #242d42;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	font-weight: bold;
+}
+
+.hi-there {
+	font-size: 49px;
+	color: #898989;
+	font-weight: bold;
+}
+
+.resume-button {
+	padding: 20px 20px;
+	color: #242d42;
+	cursor: pointer;
+	position: relative;
+	background: #c34b41;
+	text-align: center;
+	justify-content: flex-end;
+	border-radius: 10px;
+	font-size: 30px;
+}
+
+.resume-button:hover {
+	color: #ededed;
+	transition: 0.7s;
+}
+
+.typewriter-container {
+	height: 300px;
+}
+
+.resume-container {
+	padding-top: 40px;
+	background: 'white';
+}
+
+.triangle-bottomleft {
+	width: 0;
+	height: 0;
+	border-bottom: 300px solid #c34b41;
+	border-right: 300px solid transparent;
+}
+
+.typewriter {
+	font-size: 150px;
+}
+
+@media screen and (max-width: 800px) {
+	.hi-there {
+		margin-top: 80px;
+		font-size: 25px;
+	}
+
+	.typewriter-container {
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.resume-button {
+		padding: 10px 10px;
+		color: #242d42;
+		cursor: pointer;
+		position: relative;
+		background: #c34b41;
+		text-align: center;
+		justify-content: flex-end;
+		border-radius: 10px;
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.typewriter-container {
+		height: 420px;
+	}
+}

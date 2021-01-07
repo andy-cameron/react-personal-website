@@ -1,0 +1,69 @@
+.header-div-container {
+	position: relative;
+}
+
+.header-container {
+	color: #242d42;
+}
+
+.header-button {
+	color: #898989;
+	cursor: pointer;
+	position: relative;
+	background: #242d42;
+	text-align: center;
+	justify-content: flex-end;
+	margin: 30px;
+}
+.header-button-active {
+	color: #ededed;
+	cursor: pointer;
+	position: relative;
+	background: #242d42;
+	text-align: center;
+	justify-content: flex-end;
+	margin: 30px;
+}
+
+.header-button-contact {
+	color: #242d42;
+	cursor: pointer;
+	position: relative;
+	background: #c34b41;
+	text-align: center;
+	justify-content: flex-end;
+	margin: 30px;
+	padding: 0px 10px;
+	border-radius: 10px;
+}
+.header-button-contact-active {
+	color: #ededed;
+	cursor: pointer;
+	position: relative;
+	background: #c34b41;
+	text-align: center;
+	justify-content: flex-end;
+	margin: 30px;
+	padding: 0px 10px;
+	border-radius: 10px;
+}
+
+.header-button-contact:hover {
+	color: #ededed;
+	transition: 0.7s;
+}
+
+.header-button:hover {
+	color: #ededed;
+	transition: 0.7s;
+}
+
+.header-button:active {
+	color: #ededed;
+}
+
+@media screen and (max-width: 800px) {
+	h1 {
+		font-size: 22px;
+	}
+}
